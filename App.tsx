@@ -118,7 +118,7 @@ const App: React.FC = () => {
         >
           <div className="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
           <MessageSquareCode className="w-6 h-6" />
-          <span className="text-[10px] font-mono font-black tracking-[0.2em] uppercase hidden md:inline">ASTRA_v4</span>
+          <span className="text-[10px] font-mono font-black tracking-[0.2em] uppercase hidden md:inline">LIEBE_v4</span>
           
           <span className="absolute -top-1 -right-1 flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>

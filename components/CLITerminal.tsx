@@ -42,7 +42,7 @@ const CLITerminal: React.FC<CLITerminalProps> = ({ isOpen, setIsOpen }) => {
         response = 'Available commands: about, skills, projects, philosophy, clear, exit';
         break;
       case 'about':
-        response = 'Aditya Kumar Jha: Fullstack Architect & B.Tech CSE Student (3rd Sem) at Bennett University. Architecting value in the age of intelligence.';
+        response = 'Aditya Kumar Jha | Fullstack Architect | B.Tech CSE (3rd Sem) @ Bennett University | Crafting smart, scalable, and future-ready software';
         break;
       case 'skills':
         response = 'Web [98%], React/Next.js [95%], Tailwind/Shadcn [92%], Web3/Solidity [85%], AI Core Integration [90%].';
@@ -51,7 +51,7 @@ const CLITerminal: React.FC<CLITerminalProps> = ({ isOpen, setIsOpen }) => {
         response = 'Active Deploys: MentoraAI (AI Mentorship), VOID RENDER (Shader Engine), LUMINA OS (3D Interface).';
         break;
       case 'philosophy':
-        response = 'THINK. TRY. FAIL. LEARN OUT LOUD. Join 1,500+ builders in the digital frontier via the linked newsletter.';
+        response = ' LEARN OUT LOUD. Join 1,500+ builders in the digital frontier via the linked newsletter.';
         break;
       case 'clear':
         setHistory([]);
@@ -106,12 +106,17 @@ const CLITerminal: React.FC<CLITerminalProps> = ({ isOpen, setIsOpen }) => {
             >
               <div className="text-blue-500 mb-8">
                 <pre className="leading-tight text-[10px] md:text-xs">
-{`   _____  ____  _ _______     __      
-  /  _  \\|  _ \\| |__   __|\\ \\   / /    
- /  /_\\  \\ | | | |  | |    \\ \\_/ /     
-|  ___  || | | | |  | |     \\   /      
-| |   | || |_| | |  | |      | |       
-|_|   |_|____/|_|  |_|      |_|       `}
+{`
+ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░  
+ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓██████▓▒░░▒▓████████▓▒░ 
+ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+ ░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+                                                                          
+                                                                          
+                                  `}
                 </pre>
                 <div className="mt-4 uppercase tracking-[0.5em] text-[10px]">Architect Interface Enabled</div>
               </div>

@@ -17,7 +17,7 @@ interface AIChatProps {
 
 const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: 'Identity confirmed. I am ASTRA. How can I assist your investigation of the Architect\'s work?' }
+    { role: 'model', text: 'Identity confirmed. Hello ,I am Liebe. How can I assist your investigation of the Architect\'s work?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -64,7 +64,7 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
                   <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
                   <div className="absolute inset-0 bg-blue-500 rounded-full animate-ping opacity-20" />
                 </div>
-                <h3 className="text-[10px] font-mono font-bold text-white tracking-[0.4em] uppercase">SYSTEM_ASTRA</h3>
+                <h3 className="text-[10px] font-mono font-bold text-white tracking-[0.4em] uppercase">SYSTEM_LIEBE</h3>
               </div>
               <button 
                 onClick={() => setIsOpen(false)} 
@@ -87,7 +87,7 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
                       : 'bg-white/5 border-white/10 text-slate-400'
                   }`}>
                     <div className="text-[8px] mb-1.5 text-slate-700 uppercase tracking-widest font-bold">
-                      {msg.role === 'user' ? 'REQUEST' : 'ASTRA_NODE'}
+                      {msg.role === 'user' ? 'REQUEST' : 'LIEBE_NODE'}
                     </div>
                     {msg.text}
                   </div>
@@ -112,7 +112,7 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                  placeholder="Inquire ASTRA..."
+                  placeholder="Inquire LIEBE..."
                   className="flex-1 bg-transparent px-4 py-2 text-white placeholder-slate-800 text-[11px] font-mono focus:outline-none"
                 />
                 <button 

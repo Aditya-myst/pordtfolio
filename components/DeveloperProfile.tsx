@@ -56,21 +56,23 @@ const PROJECTS = [
   {
     title: 'MentoraAI',
     desc: 'AI-driven mentorship platform optimizing student-expert connections. Features real-time matching algorithms and a seamless dashboard for knowledge exchange.',
-    tags: ['Next.js', 'Tailwind CSS', 'Gemini', 'Node.js'],
+    tags: ['Next.js', 'Tailwind CSS', 'Gemini', 'Node.js', 'Clerk', 'Supabase'],
     status: '01'
   },
   {
-    title: 'VOID RENDER',
-    desc: 'A low-latency shader engine built for real-time generative graphics. Leverages WebGL and Rust-compiled WASM for extreme performance in the browser.',
-    tags: ['GLSL', 'Rust', 'WASM', 'WebGL'],
+    title: 'CAREERDIVE',
+    desc: 'A career exploration and professional development initiative focused on helping students and early professionals identify strengths, explore career paths, and build industry-ready skills through counseling, workshops, and networking events.',
+    tags: ['TypeScript', 'UI Design', 'Career Development', 'Workshops', 'Networking', 'Mentorship'],
     status: '02'
   },
+  
   {
-    title: 'LUMINA OS',
-    desc: 'High-fidelity sensory interface for decentralized event management. Integrates blockchain verification with immersive 3D spatial UI.',
-    tags: ['React', 'Three.js', 'AI', 'Solidity'],
+    title: 'PORTFOLIO',
+    desc: 'A modern, performance-optimized personal portfolio showcasing projects, skills, and experience through interactive UI, smooth animations, and responsive design.',
+    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'UI/UX'],
     status: '03'
   }
+  
 ];
 
 const MARQUEE_ITEMS = [
@@ -84,7 +86,7 @@ const MARQUEE_ITEMS = [
   "Fullstack Architect"
 ];
 
-const DeveloperProfile: React.FC = () => {
+  const DeveloperProfile: React.FC = () => {
   const [email, setEmail] = React.useState('');
   const [subscribed, setSubscribed] = React.useState(false);
 
@@ -123,7 +125,7 @@ const DeveloperProfile: React.FC = () => {
             
             <div className="relative w-full h-full rounded-full border-4 border-white/10 overflow-hidden bg-black transition-all duration-1000 group-hover:border-white/40 group-hover:scale-[1.02] group-hover:shadow-[0_0_80px_rgba(37,99,235,0.2)]">
               <motion.img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" 
+                src="/aditya.png" 
                 alt="Aditya Kumar Jha" 
                 className="w-full h-full object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:brightness-110 group-hover:scale-105 transition-all duration-1000"
               />

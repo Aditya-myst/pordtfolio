@@ -48,7 +48,7 @@ const CustomCursor: React.FC = () => {
           className="text-[10px] font-mono text-white tracking-[0.3em] font-black"
           animate={{ opacity: isHovering ? 1 : 0 }}
         >
-          SCAN
+          VIEW
         </motion.span>
       </motion.div>
       
