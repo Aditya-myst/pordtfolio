@@ -63,26 +63,30 @@ const PROJECTS = [
     title: 'HookFlow',
     desc: 'AI-powered React hooks generator that creates production-ready custom hooks from natural language descriptions. Features intelligent code generation, TypeScript support, and seamless integration with modern React workflows.',
     tags: ['React', 'TypeScript', 'Gemini AI', 'Node.js', 'Express', 'Clerk'],
-    status: '01'
+    status: '01',
+    link: 'https://hookflow-delta.vercel.app/'
   },
   {
     title: 'MentoraAI',
     desc: 'AI-driven mentorship platform optimizing student-expert connections. Features real-time matching algorithms and a seamless dashboard for knowledge exchange.',
     tags: ['Next.js', 'Tailwind CSS', 'Gemini', 'Node.js', 'Clerk', 'Supabase'],
-    status: '02'
+    status: '02',
+    link: 'https://mentora-ai-three.vercel.app/'
   },
   {
     title: 'CAREERDIVE',
     desc: 'A career exploration and professional development initiative focused on helping students and early professionals identify strengths, explore career paths, and build industry-ready skills through counseling, workshops, and networking events.',
     tags: ['TypeScript', 'UI Design', 'Career Development', 'Workshops', 'Networking', 'Mentorship'],
-    status: '03'
+    status: '03',
+    link: 'https://glowing-liger-24bb0a.netlify.app/'
   },
 
   {
     title: 'PORTFOLIO',
     desc: 'A modern, performance-optimized personal portfolio showcasing projects, skills, and experience through interactive UI, smooth animations, and responsive design.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'UI/UX'],
-    status: '04'
+    status: '04',
+    link: 'https://adityakaportfolio.netlify.app/'
   }
 
 ];
@@ -292,12 +296,16 @@ const DeveloperProfile: React.FC = () => {
 
         <div className="space-y-24 md:space-y-32">
           {PROJECTS.map((project, i) => (
-            <motion.div
+            <motion.a
               key={i}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              className="group relative border-b border-white/5 pb-20 last:border-0"
+              className="group relative border-b border-white/5 pb-20 last:border-0 block cursor-pointer"
+              data-hover="true"
             >
               <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start">
                 <div className="flex flex-col gap-4 shrink-0">
@@ -323,7 +331,7 @@ const DeveloperProfile: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
