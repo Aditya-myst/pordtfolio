@@ -60,23 +60,29 @@ const SKILL_CATEGORIES = [
 
 const PROJECTS = [
   {
+    title: 'HookFlow',
+    desc: 'AI-powered React hooks generator that creates production-ready custom hooks from natural language descriptions. Features intelligent code generation, TypeScript support, and seamless integration with modern React workflows.',
+    tags: ['React', 'TypeScript', 'Gemini AI', 'Node.js', 'Express', 'Clerk'],
+    status: '01'
+  },
+  {
     title: 'MentoraAI',
     desc: 'AI-driven mentorship platform optimizing student-expert connections. Features real-time matching algorithms and a seamless dashboard for knowledge exchange.',
     tags: ['Next.js', 'Tailwind CSS', 'Gemini', 'Node.js', 'Clerk', 'Supabase'],
-    status: '01'
+    status: '02'
   },
   {
     title: 'CAREERDIVE',
     desc: 'A career exploration and professional development initiative focused on helping students and early professionals identify strengths, explore career paths, and build industry-ready skills through counseling, workshops, and networking events.',
     tags: ['TypeScript', 'UI Design', 'Career Development', 'Workshops', 'Networking', 'Mentorship'],
-    status: '02'
+    status: '03'
   },
 
   {
     title: 'PORTFOLIO',
     desc: 'A modern, performance-optimized personal portfolio showcasing projects, skills, and experience through interactive UI, smooth animations, and responsive design.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'UI/UX'],
-    status: '03'
+    status: '04'
   }
 
 ];
