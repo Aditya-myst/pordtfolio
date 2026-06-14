@@ -32,9 +32,9 @@ const SKILL_CATEGORIES = [
     icon: TerminalIcon,
     skills: [
       { name: 'Node.js', level: 90, color: '#339933', Logo: SiNodedotjs },
-      { name: 'FastAPI', level: 88, color: '#009688', Logo: SiFastapi },
-      { name: 'PostgreSQL', level: 85, color: '#336791', Logo: SiPostgresql },
-      { name: 'Redis', level: 80, color: '#dc382d', Logo: SiRedis },
+      { name: 'FastAPI', level: 88, color: '#009688', Logo: () => <span>⚡</span> },
+      { name: 'PostgreSQL', level: 85, color: '#336791', Logo: () => <span>🗄️</span> },
+      { name: 'Redis', level: 80, color: '#dc382d', Logo: () => <span>⚡</span> },
     ]
   },
 
@@ -42,21 +42,21 @@ const SKILL_CATEGORIES = [
     title: 'AI Engineering',
     icon: Cpu,
     skills: [
-      { name: 'OpenAI APIs', level: 90, color: '#10a37f', Logo: SiOpenai },
+      { name: 'OpenAI APIs', level: 90, color: '#10a37f', Logo: () => <span>🤖</span> },
       { name: 'Gemini APIs', level: 88, color: '#4285f4', Logo: SiGooglegemini },
-      { name: 'Prompt Engineering', level: 92, color: '#8b5cf6', Logo: SiOpenai },
-      { name: 'AI Workflows', level: 85, color: '#f97316', Logo: SiN8N },
+      { name: 'Prompt Engineering', level: 92, color: '#8b5cf6', Logo: () => <span>🧠</span> },
+      { name: 'AI Workflows', level: 85, color: '#f97316', Logo: () => <span>⚙️</span> },
     ]
   },
 
   {
     title: 'Agentic AI Systems',
-    icon: Bot,
+    icon: Cpu,
     skills: [
-      { name: 'AI Agents', level: 88, color: '#7c3aed', Logo: SiOpenai },
-      { name: 'LangGraph', level: 82, color: '#22c55e', Logo: SiLangchain },
-      { name: 'RAG Systems', level: 85, color: '#14b8a6', Logo: SiPinecone },
-      { name: 'MCP', level: 78, color: '#f59e0b', Logo: SiOpenai },
+      { name: 'AI Agents', level: 88, color: '#7c3aed', Logo: () => <span>🤖</span> },
+      { name: 'LangGraph', level: 82, color: '#22c55e', Logo: () => <span>🔗</span> },
+      { name: 'RAG Systems', level: 85, color: '#14b8a6', Logo: () => <span>📚</span> },
+      { name: 'MCP', level: 78, color: '#f59e0b', Logo: () => <span>⚙️</span> },
     ]
   },
 
@@ -65,35 +65,34 @@ const SKILL_CATEGORIES = [
     icon: ShieldCheck,
     skills: [
       { name: 'Solidity', level: 85, color: '#363636', Logo: SiSolidity },
-      { name: 'Ethereum', level: 85, color: '#627eea', Logo: SiEthereum },
-      { name: 'Smart Contracts', level: 88, color: '#f59e0b', Logo: SiChainlink },
+      { name: 'Ethereum', level: 85, color: '#627eea', Logo: () => <span>⟠</span> },
+      { name: 'Smart Contracts', level: 88, color: '#f59e0b', Logo: () => <span>📜</span> },
       { name: 'DApp Development', level: 82, color: '#f3ba2f', Logo: SiWeb3Dotjs },
     ]
   },
 
   {
     title: 'Cloud & DevOps',
-    icon: Server,
+    icon: TerminalIcon,
     skills: [
-      { name: 'Docker', level: 82, color: '#2496ed', Logo: SiDocker },
-      { name: 'AWS', level: 75, color: '#ff9900', Logo: SiAmazonaws },
-      { name: 'Vercel', level: 90, color: '#ffffff', Logo: SiVercel },
-      { name: 'CI/CD', level: 78, color: '#3b82f6', Logo: SiGithubactions },
+      { name: 'Docker', level: 82, color: '#2496ed', Logo: () => <span>🐳</span> },
+      { name: 'AWS', level: 75, color: '#ff9900', Logo: () => <span>☁️</span> },
+      { name: 'Vercel', level: 90, color: '#ffffff', Logo: () => <span>▲</span> },
+      { name: 'CI/CD', level: 78, color: '#3b82f6', Logo: () => <span>🔄</span> },
     ]
   },
 
   {
     title: 'Product & Design',
-    icon: Sparkles,
+    icon: Layout,
     skills: [
-      { name: 'Product Thinking', level: 92, color: '#ec4899', Logo: SiNotion },
+      { name: 'Product Thinking', level: 92, color: '#ec4899', Logo: SiDiagramsdotnet },
       { name: 'UI/UX Design', level: 88, color: '#a855f7', Logo: SiFigma },
-      { name: 'Communication', level: 90, color: '#2563eb', Logo: SiSlack },
-      { name: 'Technical Writing', level: 85, color: '#22c55e', Logo: SiMarkdown },
+      { name: 'Communication', level: 90, color: '#2563eb', Logo: SiCreativecommons },
+      { name: 'Technical Writing', level: 85, color: '#22c55e', Logo: () => <span>✍️</span> },
     ]
   }
 ];
-
 const PROJECTS = [
   {
     title: 'AudiLearn',
