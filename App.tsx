@@ -155,7 +155,7 @@ const App: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-20 mb-32">
               <div className="col-span-1 md:col-span-7 space-y-12">
                 <h2 className="text-4xl md:text-8xl font-heading font-bold text-white tracking-tighter leading-tight uppercase">
-                  THINK. TRY. FAIL. <br /> <span className="text-slate-800 italic">LEARN OUT LOUD.</span>
+                  BUILDER LOG <br /> <span className="text-slate-800 italic">LEARN OUT LOUD.</span>
                 </h2>
                 <div className="flex flex-col gap-4">
                   <span className="text-[10px] font-mono text-slate-600 uppercase tracking-[0.4em]">Aditya Kumar Jha // Fullstack Architect // 2025</span>
