@@ -98,17 +98,19 @@ const PROJECTS = [
   {
     title: 'AudiLearn',
     desc: 'Audilearn is a full-stack AI-powered LMS SaaS platform where students can have real-time voice conversations with custom AI tutors (called Companions) on any subject.',
-    tags: ['Next.js', 'Tailwind CSS', 'Node.js', 'Clerk', 'Supabase','Vapi','Sentry'],
+    tags: ['Next.js', 'Tailwind CSS', 'Node.js', 'Clerk', 'Supabase', 'Vapi', 'Sentry'],
     status: '01',
     link: 'https://audilearn.vercel.app/'
   },
+
   {
     title: 'HookFlow',
-    desc: 'An AI-powered Scroll-Stopping Hooks & Captions Generator that creates high-impact hooks and engaging captions tailored to your content, goals, and target platform. It helps you craft attention-grabbing, viral-ready content optimized for maximum reach and engagement across social media platforms'.,
+    desc: 'An AI-powered Scroll-Stopping Hooks & Captions Generator that creates high-impact hooks and engaging captions tailored to your content, goals, and target platform. It helps you craft attention-grabbing, viral-ready content optimized for maximum reach and engagement across social media platforms.',
     tags: ['React', 'TypeScript', 'Gemini AI', 'Node.js', 'Express', 'Clerk'],
-    status: '01',
+    status: '02',
     link: 'https://hookflow-delta.vercel.app/'
   },
+
   {
     title: 'CAREERDIVE',
     desc: 'A career exploration and professional development initiative focused on helping students and early professionals identify strengths, explore career paths, and build industry-ready skills through counseling, workshops, and networking events.',
@@ -124,7 +126,6 @@ const PROJECTS = [
     status: '04',
     link: 'https://adityakaportfolio.netlify.app/'
   }
-
 ];
 
 const MARQUEE_ITEMS = [
