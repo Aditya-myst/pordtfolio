@@ -17,61 +17,97 @@ import {
 
 const SKILL_CATEGORIES = [
   {
-    title: 'Core Architecture',
-    icon: TerminalIcon,
-    skills: [
-      { name: 'TypeScript', level: 74, color: '#3178c6', Logo: SiTypescript },
-      { name: 'Node.js', level: 90, color: '#339933', Logo: SiNodedotjs },
-      { name: 'Rust', level: 55, color: '#dea584', Logo: SiRust },
-      { name: 'WASM', level: 65, color: '#654ff0', Logo: SiWebassembly },
-    ]
-  },
-  {
-    title: 'Frontend Engine',
+    title: 'Frontend Engineering',
     icon: Layout,
     skills: [
-      { name: 'React / Next.js', level: 95, color: '#61dafb', Logo: SiReact },
+      { name: 'React', level: 95, color: '#61dafb', Logo: SiReact },
+      { name: 'Next.js', level: 95, color: '#ffffff', Logo: SiNextdotjs },
+      { name: 'TypeScript', level: 92, color: '#3178c6', Logo: SiTypescript },
       { name: 'Tailwind CSS', level: 90, color: '#06b6d4', Logo: SiTailwindcss },
-      { name: 'Three.js / WebGL', level: 60, color: '#ffffff', Logo: SiThreedotjs },
-      { name: 'Framer Motion', level: 70, color: '#ff0055', Logo: SiFramer },
     ]
   },
+
   {
-    title: 'Specialist Systems',
+    title: 'Backend Engineering',
+    icon: TerminalIcon,
+    skills: [
+      { name: 'Node.js', level: 90, color: '#339933', Logo: SiNodedotjs },
+      { name: 'FastAPI', level: 88, color: '#009688', Logo: SiFastapi },
+      { name: 'PostgreSQL', level: 85, color: '#336791', Logo: SiPostgresql },
+      { name: 'Redis', level: 80, color: '#dc382d', Logo: SiRedis },
+    ]
+  },
+
+  {
+    title: 'AI Engineering',
     icon: Cpu,
     skills: [
-      { name: 'Solidity', level: 85, color: '#363636', Logo: SiSolidity },
-      { name: 'Gemini AI / LLMs', level: 85, color: '#4285f4', Logo: SiGooglegemini },
-      { name: 'GLSL / Shaders', level: 40, color: '#5586a4', Logo: SiOpengl },
-      { name: 'DApp Dev', level: 60, color: '#f3ba2f', Logo: SiWeb3Dotjs },
+      { name: 'OpenAI APIs', level: 90, color: '#10a37f', Logo: SiOpenai },
+      { name: 'Gemini APIs', level: 88, color: '#4285f4', Logo: SiGooglegemini },
+      { name: 'Prompt Engineering', level: 92, color: '#8b5cf6', Logo: SiOpenai },
+      { name: 'AI Workflows', level: 85, color: '#f97316', Logo: SiN8N },
     ]
   },
+
   {
-    title: 'Product & Soft Systems',
+    title: 'Agentic AI Systems',
+    icon: Bot,
+    skills: [
+      { name: 'AI Agents', level: 88, color: '#7c3aed', Logo: SiOpenai },
+      { name: 'LangGraph', level: 82, color: '#22c55e', Logo: SiLangchain },
+      { name: 'RAG Systems', level: 85, color: '#14b8a6', Logo: SiPinecone },
+      { name: 'MCP', level: 78, color: '#f59e0b', Logo: SiOpenai },
+    ]
+  },
+
+  {
+    title: 'Blockchain Engineering',
     icon: ShieldCheck,
     skills: [
-      { name: 'Product Thinking', level: 92, color: '#ec4899', Logo: SiDiagramsdotnet },
-      { name: 'Communication', level: 90, color: '#2563eb', Logo: SiCreativecommons },
-      { name: 'Marketing Strategy', level: 85, color: '#f59e0b', Logo: SiCreativecommons },
+      { name: 'Solidity', level: 85, color: '#363636', Logo: SiSolidity },
+      { name: 'Ethereum', level: 85, color: '#627eea', Logo: SiEthereum },
+      { name: 'Smart Contracts', level: 88, color: '#f59e0b', Logo: SiChainlink },
+      { name: 'DApp Development', level: 82, color: '#f3ba2f', Logo: SiWeb3Dotjs },
+    ]
+  },
+
+  {
+    title: 'Cloud & DevOps',
+    icon: Server,
+    skills: [
+      { name: 'Docker', level: 82, color: '#2496ed', Logo: SiDocker },
+      { name: 'AWS', level: 75, color: '#ff9900', Logo: SiAmazonaws },
+      { name: 'Vercel', level: 90, color: '#ffffff', Logo: SiVercel },
+      { name: 'CI/CD', level: 78, color: '#3b82f6', Logo: SiGithubactions },
+    ]
+  },
+
+  {
+    title: 'Product & Design',
+    icon: Sparkles,
+    skills: [
+      { name: 'Product Thinking', level: 92, color: '#ec4899', Logo: SiNotion },
       { name: 'UI/UX Design', level: 88, color: '#a855f7', Logo: SiFigma },
+      { name: 'Communication', level: 90, color: '#2563eb', Logo: SiSlack },
+      { name: 'Technical Writing', level: 85, color: '#22c55e', Logo: SiMarkdown },
     ]
   }
 ];
 
 const PROJECTS = [
   {
+    title: 'AudiLearn',
+    desc: 'Audilearn is a full-stack AI-powered LMS SaaS platform where students can have real-time voice conversations with custom AI tutors (called Companions) on any subject.',
+    tags: ['Next.js', 'Tailwind CSS', 'Node.js', 'Clerk', 'Supabase','Vapi','Sentry'],
+    status: '01',
+    link: 'https://audilearn.vercel.app/'
+  },
+  {
     title: 'HookFlow',
-    desc: 'AI-powered React hooks generator that creates production-ready custom hooks from natural language descriptions. Features intelligent code generation, TypeScript support, and seamless integration with modern React workflows.',
+    desc: 'An AI-powered Scroll-Stopping Hooks & Captions Generator that creates high-impact hooks and engaging captions tailored to your content, goals, and target platform. It helps you craft attention-grabbing, viral-ready content optimized for maximum reach and engagement across social media platforms'.,
     tags: ['React', 'TypeScript', 'Gemini AI', 'Node.js', 'Express', 'Clerk'],
     status: '01',
     link: 'https://hookflow-delta.vercel.app/'
-  },
-  {
-    title: 'MentoraAI',
-    desc: 'AI-driven mentorship platform optimizing student-expert connections. Features real-time matching algorithms and a seamless dashboard for knowledge exchange.',
-    tags: ['Next.js', 'Tailwind CSS', 'Gemini', 'Node.js', 'Clerk', 'Supabase'],
-    status: '02',
-    link: 'https://mentora-ai-three.vercel.app/'
   },
   {
     title: 'CAREERDIVE',
@@ -99,7 +135,8 @@ const MARQUEE_ITEMS = [
   "Technology & Money",
   "Personal Growth",
   "Marketing Strategy",
-  "Fullstack Architect"
+  "Fullstack Architect",
+  "Content Creator"
 ];
 
 const DeveloperProfile: React.FC = () => {
@@ -109,7 +146,7 @@ const DeveloperProfile: React.FC = () => {
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      window.open('https://www.linkedin.com/newsletters/think-try-fail-7346358247701868544', '_blank');
+      window.open('https://www.linkedin.com/newsletters/builder-log-7346358247701868544/', '_blank');
       setSubscribed(true);
       setTimeout(() => {
         setSubscribed(false);
